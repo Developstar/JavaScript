@@ -10,6 +10,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles/app.css" />
+
+    <!-- javascript can be added directly to the html file in the head section -->
+    <!-- It gets harder to manage your site if all your script and html files are in one file -->
+    <!-- <script>
+      alert('Welcome to this page')
+    </script> -->
+    
+
+    <!-- However, the best way is by linking your javaScript file to your html file using the src -->
+    <!-- <script src="./assets/scripts/app.js">
+    </script> -->
   </head>
   <body>
     <header>
@@ -29,5 +40,9 @@
       <h2 id="current-calculation">0</h2>
       <h2>Result: <span id="current-result">0</span></h2>
     </section>
+
+    <!-- To ensure that the page loads first before executing the Javascript, we place the script below the code above the body closing tag -->
+    <script src="./assets/scripts/vendor.js"></script>
+    <script src="./assets/scripts/app.js"></script>
   </body>
 </html>
