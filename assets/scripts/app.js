@@ -3,7 +3,9 @@
 
 //Declared and initialized 
 let currentResult = 0;
-
 currentResult = currentResult + 10
 
-outputResult(currentResult, '')
+let calculationDescription = 'currentResult + 10'
+
+// a function to display the result  was called
+outputResult(currentResult, calculationDescription)
